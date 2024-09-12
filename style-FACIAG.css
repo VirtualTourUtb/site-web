@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif; 
+
+}
+
+img {
+  max-width: 100%;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.header {
+  background-image: url(imagenes-faciag/bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  padding: 80px 0 0 0;
+}
+
+.menu {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  z-index: 1000;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+
+.menu .navbar ul li a {
+  font-size: 18px;
+  color:#fdfefe;
+  display: block;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.menu .navbar ul li a:hover {
+  color:#006400;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-txt {
+  width: 50%;
+  padding-right: 75px;
+}
+
+.header-txt h1 {
+  color:#ffffff;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+span {
+  color: #006400;
+}
+
+p {
+  font-size: 17px;
+  color:#EBEBEB;
+  margin-bottom: 35px;
+}
+
+.btn-1{
+  display: inline-block;
+  padding: 13px 35px;
+  background-color: #006400;
+  color:#ffffff
+}
+
+.btn-2{
+  display: inline-block;
+  padding: 13px 35px;
+  background-color: #D4AC0D;
+  color:#ffffff
+}
+
+.btn-1:hover {
+  background-color: #D4AC0D;
+}
+
+.btn-2:hover {
+  background-color: #006400;
+}
+
+.about {
+  padding: 130px 0;
+  display: flex;
+  
+}
+
+.about-img {
+  flex-basis: 60%;
+  display: flex;
+}
+
+.about-img img {
+  width: 290px;
+  border-radius: 20px;
+  margin-right: 30px;
+  box-shadow: 0 0 20px rgb(202, 184, 21);
+}
+
+.about-txt{
+  flex-basis: 50%;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 1;
+  color:#e2bd38;
+  margin-bottom : 25px;
+}
+
+.about-txt span {
+  color: #1f6918;
+}
+
+.about-txt p {
+  color: #000000;
+}
+
+.Information {
+  padding: 70px 0;
+  background-image: url(imagenes-faciag/fondo-2.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Information-content {
+  display: flex;
+}
+
+.Information-1 {
+  flex-basis: 50%;
+}
+
+.Information-2 {
+  flex-basis: 50%;
+  padding-left: 50px;
+}
+
+.Information-2 h2 {
+  color:#e2bd38;
+}
+
+.Information-2 p {
+  color:rgb(255, 255, 255);
+  font-size: 17px;
+}
+
+.Information-2 span {
+  color:#e2bd38;
+}
+
+@media(max-width:991px) {
+  .menu {
+    padding: 20px
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #D4AC0D;
+    display: none;
+  }
+
+  .menu .navbar ul li :hover {
+      color: #ffffff;
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+  }
+
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+
+  .header {
+    background-position: left;
+    min-height: 0hv;
+    padding: 100px 30px;
+  }
+
+  .header-txt {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .about {
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  .about-img {
+    justify-content: center;
+    order: 2;
+  }
+
+  .about-img img {
+    width: 150px;
+    margin: 0 15px;
+  }
+
+  .about-txt {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .about-txt p {
+    margin-bottom: 15px;
+  }
+
+  .Information {
+    padding: 30px;
+    background-position: right;
+  }
+  
+  .Information-content {
+    flex-direction: column;
+  }
+
+  .Information-2 {
+    text-align:  center;
+    padding: 0;
+  }
+
+}
+
+@media(max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .header-txt h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-img img {
+    width: 100px;
+  }
+}
+
+@media(max-width: 480px) {
+  .header-txt h1 {
+    font-size: 1.2rem;
+  }
+  
+  .btn-1, .btn-2 {
+    padding: 10px 20px;
+  }
+}
+
+
