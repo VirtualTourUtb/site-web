@@ -1,0 +1,196 @@
+@import url("https://fonts.googleaps.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-image:  url(imagenes-fcjse/juego.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 50vh;
+}
+
+.game-fcjse {
+    padding: 25% 0;
+    display: flex;
+    border-radius: 20px;
+    margin-right: 5%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-fcjse iframe {
+    width: 70vw; 
+    height: 90vh; 
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 200px 0;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    margin-top: 10px;
+}
+
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.menu .navbar ul li a:hover {
+    color: #12d800;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;                     
+}
+
+
+.header-txt {
+    width: 100%;
+    text-align: center;
+}
+
+.header-txt h1 {
+    color: #FFFFFF;
+    font-size: 50px;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.header-txt span {
+    color: #000000;
+    
+}
+
+.header-txt p {
+    font-size: 16px;
+    color: #D5D5D5;
+    padding: 0 200px;
+    margin-bottom: 25px;
+}
+ 
+span {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+ }
+ 
+ p {
+    font-size: 30px;
+    font-weight: 700;
+    
+ }
+
+ @media(max-width:991px ) {
+
+    .menu {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #096d00d0;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        padding: 50px 30px;
+    }
+
+    .header-txt {
+        text-align: center;
+        padding: 0;
+    }
+
+    .header-txt p {
+        padding: 0;
+    }
+
+} 
+
+@media (max-width: 768px) {
+    .game-fafi {
+        padding: 100px 10px; 
+    }
+
+    .menu .navbar ul li a {
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .menu .navbar ul li a {
+        font-size: 14px; 
+    }
+
+    .game-fafi iframe {
+        height: 250px; 
+    }
+}
+
